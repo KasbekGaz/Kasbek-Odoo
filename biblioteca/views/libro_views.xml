@@ -30,21 +30,21 @@
         </field>
     </record>
 
+    <!--Aqui esta la accion -->
+    <record id="action_libro" model="ir.actions.act_window">
+        <field name="name">Libros</field>
+        <field name="res_model">biblioteca.libro</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!--Aqui estan los menus-->
     <menuitem
         id="menu_biblioteca_root"
         name="Biblioteca"/>
     <menuitem
         id="menu_biblioteca_libros"
-        name="libros"
-        action="action_id"
-        parent="menu_biblioteca_root"
-        />
-    <!--Aqui esta -->
-    <record id="action_libro" model="ir.actions.act_window">
-        <field name="name">Libros</field>
-        <field name="res_model">biblioteca.libro</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+        name="Libros"
+        action="action_libro"
+        parent="menu_biblioteca_root"/>
 
 </odoo>
