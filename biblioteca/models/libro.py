@@ -11,3 +11,5 @@ class Libro(models.Model):
     autor = fields.Char(string='Autor', required=True)
     fecha_publicacion = fields.Date(string='Publish date', required=True)
     precio = fields.Float(string='Price', required=True)
+    isbn = fields.Char(string='ISBN', required=True)
+    disponible = fields.Boolean(string='Available', default=True)

@@ -9,6 +9,8 @@
                 <field name="name" />
                 <field name="autor" />
                 <field name="precio" />
+                <field name="isbn" />
+                <field name="disponible"/>
             </tree>
         </field>
     </record>
@@ -24,6 +26,8 @@
                         <field name="autor"/>
                         <field name="fecha_publicacion"/>
                         <field name="precio"/>
+                        <field name="isbn" />
+                        <field name="disponible"/>
                     </group>
                 </sheet>
             </form>
