@@ -4,7 +4,7 @@ from odoo import models, fields
 # Esta clase hereda de models.Model
 class Libro(models.Model):
     # Aqui estamos definiendo el modelo
-    _name = 'bibliteca.libro'
+    _name = 'biblioteca.libro'
     _description = 'Libro'
     # Aqui estan los campos del modelo
     name = fields.Char(string='Title', required=True)
